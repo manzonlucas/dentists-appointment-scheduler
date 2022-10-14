@@ -9,7 +9,7 @@ Due to requirementes, not all request methods are implemented in the frontend, o
 - [Maven](https://maven.apache.org/download.cgi)
 - [Java 17](https://www.oracle.com/java/technologies/downloads/#java17)
 
-## API DOCUMENTATION:
+## API documentation:
 ### OdontologoController
 - __POST__ /odontologos => without "id" property within .json, CREATES a new professional (dentist in this case).
 - __PUT__ /odontologos => with "id" property within .json, MODIFIES an existing professional.
