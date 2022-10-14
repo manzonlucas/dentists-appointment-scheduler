@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFI - Consultorio Odontológico</title>
+</head>
+
+<body>
+    <h1>DH - Consultorio Odontológico</h1>
+
+    <form action="">
+        <fieldset>
+            <legend>Alta de turnos</legend>
+
+            <label for="pacientes-dropdown">Paciente: </label>
+            <select name="paciente-id" id="pacientes-dropdown">
+                <option value="" disabled selected hidden>Elija un paciente</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="odontologos-dropdown">Odontologo:</label>
+            <select name="odontologo-id" id="odontologos-dropdown">
+                <option value="" disabled selected hidden>Elija un odontologo</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="datetime-input">Dia y horario</label>
+            <input type="datetime-local" id="datetime-input">
+
+            <br>
+            <br>
+
+            <!-- <label for="nombre-input">ID paciente:</label>
+            <input type="number" name="id-paciente-input" id="id-paciente-input">
+
+            <br>
+            <br>
+
+            <label for="apellido-input">ID odontologo:</label>
+            <input type="number" name="id-odontologo-input" id="id-odontologo-input">
+
+            <br>
+            <br> -->
+            <button type="submit">Guardar</button>
+        </fieldset>
+
+    </form>
+
+    <a href="./index.html">Volver</a>
+
+    <script src="./js/postTurno.js"></script>
+</body>
+
+</html>

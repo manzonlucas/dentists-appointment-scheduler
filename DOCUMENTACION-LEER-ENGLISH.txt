@@ -1,0 +1,35 @@
+MANZÓN LUCAS MATIAS
+DIGITAL HOUSE
+BACKEND 1 - TP FINAL INTEGRADOR
+11.07.2022
+
+Appointment scheduler for dental clinics, developed in Java, with Maven, H2 database and frontend interaction.
+
+HTTP request methods includes: GET, POST, PUT and DELETE. All of them can be tested with an API platform (e.g. Postman).
+Due to requirementes, not all request methods are implemented in the frontend, only POST, GET and DELETE.
+
+API DOCUMENTATION:
+- OdontologoController
+POST /odontologos => without "id" property within .json, CREATES a new professional (dentist in this case).
+PUT /odontologos => with "id" property within .json, MODIFIES an existing professional.
+GET /odontologos => lists all professionals in database.
+GET /odontologos/{id} => gets the professional whose id is requested.
+DELETE /odontologos/{id} => deletes the professional whose id is requested.
+
+- PacienteController
+POST /pacientes => without "id" property within .json, CREATES a new patient.
+PUT /pacientes => with "id" property within .json, MODIFIES an existing patient.
+GET /pacientes => lists all patients in database.
+GET /pacientes/{id} => gets the patient whose id is requested.
+DELETE /pacientes/{id} => deletes the patient whose id is requested.
+
+- TurnoController
+POST /turnos => creates an appointment and returns:
+{ 
+paciente: {id: x}, 
+odontologo: {id: x}
+}
+PUT /turnos => same request but "id" property added within .json, modifies an appointment.
+GET /turnos => lists all appointments in database.
+GET /turnos/{id} => gets the appointment which id is requested.
+DELETE /turnos/{id} => gets the appointment which id is requested.

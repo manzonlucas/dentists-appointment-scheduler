@@ -1,0 +1,2 @@
+[2022-07-1123:55:15] [ ERROR] [GlobalExceptionHandler:17] JSON parse error: Unrecognized token 'dasdasd': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false'); nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'dasdasd': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 8]
